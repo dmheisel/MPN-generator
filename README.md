@@ -4,7 +4,7 @@ Uses Table 9221 IV - MPN Index and 95% Confidence Limits for Various Combination
 
 
 *** 
-Edge Analytical Technique - 
+Edge Analytical - 
 Approved by Standard Methods Committee, 2006.
 Joint Task Group: Ellen B. Braun-Howland (chair), Paul S. Berger, Robert J.
 Blodgett, Clifford H. Johnson, Shundar Lin, Mark C. Meckes, Eugene W. Rice.
