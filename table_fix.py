@@ -14,11 +14,11 @@ with open ('MPN_table.csv') as f:
     sorted_table = sorted([row for row in fixed_table], key = lambda x: x[0])
   print(sorted_table)
 
-#with open ('MPN_table_update.csv', 'w') as f:
-#  writer = csv.writer(f)
-#  writer.writerow(keys)
-#  for row in sorted_table:
-#    writer.writerow(row)
+with open ('MPN_table_update.csv', 'w', newline = '') as f:
+  writer = csv.writer(f)
+  writer.writerow(keys)
+  for row in sorted_table:
+    writer.writerow(row)
 
 
 
