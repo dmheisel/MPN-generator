@@ -1,42 +1,18 @@
-import csv
 from tkinter import *
-
-
-keys = ['Combination of Positives', 'MPN INdex/100mL', 'Confidence Limit LOW', 'Confidence Limit HIGH']
-
-with open ('MPN_table.csv') as f:
-  reader = csv.reader(f)
-  fixed_table =[]
-  for row in reader: 
-    row = [item for item in row if item != '']
-    new_row = [item for item in row[0:4]]
-    fixed_table.append(new_row)
-    new_row = [item for item in row[4:]] 
-    fixed_table.append(new_row)
-  print(fixed_table)
-
-with open ('MPN_table_update.csv', 'w') as f:
-  writer = csv.writer(f)
-  writer.writerow(keys)
-  for row in fixed_table:
-    writer.writerow(row)
-
-
-
+import csv
 
 #finds MPN value based on input, prints "value not found" if not on table
 
 #ui = input("Input combination of positives:")
-#with open('MPN-table.csv') as f:
-#  for row in csv.reader(f):
-#    if row[0] == ui:
-#      print('MPN value is:' + row[1])
-#      break
-#  else:
-#    print('MPN value not found')  
 
-
-
+with open('MPN_table_update.csv') as f:
+  for row in csv.reader(f):
+    print(row)
+    #if row[0] == ui:
+      #print('MPN value is:' + row[1])
+      #break
+  #else:
+  #  print('MPN value not found')  
 
 #class Window(Frame):
 #  def __init__(self, master=None):
